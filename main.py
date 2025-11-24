@@ -9,6 +9,12 @@ logging.basicConfig(
     format='[%(asctime)s] %(levelname)s: %(message)s'
 )
 
+logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("telegram.vendor.ptb_urllib3.urllib3").setLevel(logging.WARNING)
+logging.getLogger("telegram.ext.Application").setLevel(logging.WARNING)
+logging.getLogger("telegram.bot").setLevel(logging.WARNING)
+logging.getLogger("telegram").setLevel(logging.WARNING)
+
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
