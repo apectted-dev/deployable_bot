@@ -19,7 +19,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     logging.info("START COMMAND HAS BEEN EXECUTED 2")
-    await update.message.reply_text("Hey! Bot is running 2 ✅")
+    await update.message.reply_text("Hey! Bot is running 4 ✅")
 
 def main():
     app = Application.builder().token(BOT_TOKEN).build()
