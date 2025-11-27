@@ -19,8 +19,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     logging.info("NEW DEPLOYMENT")
-    code has damn errors dude
-    await update.message.reply_text("Hey! this is kuberbot")
+    await update.message.reply_text("Hey! this is AYOOOOOOOOOOOOOOOOO")
 
 def main():
     app = Application.builder().token(BOT_TOKEN).build()
