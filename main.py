@@ -19,10 +19,10 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     logging.info("NEW DEPLOYMENT")
-    await update.message.reply_text("Hey! Bot is running 9 ✅")
+    await update.message.reply_text("Hey! puahahahah")
 
 def main():
-    app = Application.builder().token("awdadaw").build()
+    app = Application.builder().token(BOT_TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.run_polling()
 
