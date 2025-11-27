@@ -18,7 +18,7 @@ logging.getLogger("telegram").setLevel(logging.WARNING)
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    logging.info("START COMMAND HAS BEEN EXECUTED 2")
+    logging.info("NEW DEPLOYMENT")
     await update.message.reply_text("Hey! Bot is running 9 ✅")
 
 def main():
