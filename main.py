@@ -19,6 +19,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     logging.info("NEW DEPLOYMENT")
+    THIS CODE HAS SOME DAMN ERRORS
     await update.message.reply_text("Hey! this is AYOOOOOOOOOOOOOOOOO")
 
 def main():
